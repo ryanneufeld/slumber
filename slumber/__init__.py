@@ -85,6 +85,8 @@ class Resource(ResourceAttributesMixin, object):
 
     def _request(self, method, data=None, files=None, params=None):
         serializer = self._store["serializer"]
+        cert       = self._store["cert"] if 'cert' in self._store else None
+        headers    = self._store["headers"] if 'headers' in self._store else None
         url = self.url()
 
         headers = {"accept": serializer.get_content_type()}
@@ -192,7 +194,7 @@ class API(ResourceAttributesMixin, object):
 
     resource_class = Resource
 
-    def __init__(self, base_url=None, auth=None, format=None, append_slash=True, session=None, serializer=None):
+    def __init__(self, base_url=None, auth=None, format=None, append_slash=True, session=None, serializer=None, headers=None, cert=None):
         if serializer is None:
             serializer = Serializer(default=format)
 
@@ -208,6 +210,8 @@ class API(ResourceAttributesMixin, object):
             "append_slash": append_slash,
             "session": session,
             "serializer": serializer,
+            "headers": headers,
+            "cert": cert,
         }
 
         # Do some Checks for Required Values
