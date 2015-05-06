@@ -36,6 +36,7 @@ class ResourceTestCase(unittest.TestCase):
             data=None,
             files=None,
             params=None,
+            cert=None,
             headers={"content-type": self.base_resource._store["serializer"].get_content_type(), "accept": self.base_resource._store["serializer"].get_content_type()}
         )
 
@@ -65,6 +66,7 @@ class ResourceTestCase(unittest.TestCase):
             data=None,
             files=None,
             params=None,
+            cert=None,
             headers={"content-type": self.base_resource._store["serializer"].get_content_type(), "accept": self.base_resource._store["serializer"].get_content_type()}
         )
 
@@ -94,6 +96,7 @@ class ResourceTestCase(unittest.TestCase):
             data=None,
             files=None,
             params=None,
+            cert=None,
             headers={"content-type": self.base_resource._store["serializer"].get_content_type(),
                      "accept": self.base_resource._store["serializer"].get_content_type()}
         )
@@ -127,6 +130,7 @@ class ResourceTestCase(unittest.TestCase):
             data=None,
             files=None,
             params=None,
+            cert=None,
             headers={"content-type": self.base_resource._store["serializer"].get_content_type(),
                      "accept": self.base_resource._store["serializer"].get_content_type()}
         )
@@ -162,6 +166,7 @@ class ResourceTestCase(unittest.TestCase):
             data=None,
             files=None,
             params=None,
+            cert=None,
             headers={"content-type": self.base_resource._store["serializer"].get_content_type(), "accept": self.base_resource._store["serializer"].get_content_type()}
         )
 
@@ -191,6 +196,7 @@ class ResourceTestCase(unittest.TestCase):
             data=None,
             files=None,
             params=None,
+            cert=None,
             headers={"content-type": self.base_resource._store["serializer"].get_content_type(), "accept": self.base_resource._store["serializer"].get_content_type()}
         )
 
@@ -225,6 +231,7 @@ class ResourceTestCase(unittest.TestCase):
             data=None,
             files=None,
             params=None,
+            cert=None,
             headers={"content-type": self.base_resource._store["serializer"].get_content_type(), "accept": self.base_resource._store["serializer"].get_content_type()}
         )
 
@@ -254,6 +261,7 @@ class ResourceTestCase(unittest.TestCase):
             data=None,
             files=None,
             params=None,
+            cert=None,
             headers={"content-type": self.base_resource._store["serializer"].get_content_type(), "accept": self.base_resource._store["serializer"].get_content_type()}
         )
 
@@ -288,6 +296,7 @@ class ResourceTestCase(unittest.TestCase):
             data=None,
             files=None,
             params=None,
+            cert=None,
             headers={"content-type": self.base_resource._store["serializer"].get_content_type(), "accept": self.base_resource._store["serializer"].get_content_type()}
         )
 
@@ -317,6 +326,7 @@ class ResourceTestCase(unittest.TestCase):
             data=None,
             files=None,
             params=None,
+            cert=None,
             headers={"content-type": self.base_resource._store["serializer"].get_content_type(), "accept": self.base_resource._store["serializer"].get_content_type()}
         )
 
@@ -376,6 +386,7 @@ class ResourceTestCase(unittest.TestCase):
             data=None,
             files=None,
             params=None,
+            cert=None,
             headers={"content-type": self.base_resource._store["serializer"].get_content_type(), "accept": self.base_resource._store["serializer"].get_content_type()}
         )
 
@@ -487,6 +498,7 @@ class ResourceTestCase(unittest.TestCase):
             data=None,
             files=None,
             params=None,
+            cert=None,
             headers={"content-type": self.base_resource._store["serializer"].get_content_type(), "accept": self.base_resource._store["serializer"].get_content_type()}
         )
 
