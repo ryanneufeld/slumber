@@ -96,7 +96,7 @@ class Resource(ResourceAttributesMixin, object):
             if data is not None:
                 data = serializer.dumps(data)
 
-        resp = self._store["session"].request(method, url, data=data, params=params, files=files, headers=headers)
+        resp = self._store["session"].request(method, url, data=data, params=params, files=files, headers=headers, cert=cert)
 
         if 400 <= resp.status_code <= 499:
             exception_class = exceptions.HttpNotFoundError if resp.status_code == 404 else exceptions.HttpClientError
